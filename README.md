@@ -20,21 +20,9 @@ O projeto é dividido em três principais arquivos:
 
 ## Como Utilizar
 
-1. **Clone** ou **baixe** este repositório:
-    ```bash
-    git clone https://github.com/diogo-cedran/gerador-de-senhas.git
-    ```
+Acesse o aplicativo diretamente pelo link abaixo:
 
-2. Abra o arquivo `index.html` no seu navegador:
-    - **Navegue** até a pasta onde você baixou o projeto.
-    - **Clique** duas vezes no arquivo `index.html` para abrir no navegador.
-
-3. **Configure suas opções**:
-    - Ajuste o **comprimento da senha** usando o controle deslizante ou o campo de número.
-    - Selecione os **tipos de caracteres** que deseja incluir na senha (letras maiúsculas, minúsculas, números, símbolos).
-    
-4. **Clique no botão "Gerar"** para criar uma senha aleatória baseada nas configurações.
-5. **Clique no botão "Copiar"** para copiar a senha gerada para a área de transferência.
+**Gerador de Senhas Aleatórias** - [https://diogo-cedran.github.io/gerador-de-senhas/](https://diogo-cedran.github.io/gerador-de-senhas/)
 
 ## Exemplo de Uso
 
@@ -42,12 +30,6 @@ O projeto é dividido em três principais arquivos:
 2. Escolha se deseja incluir letras maiúsculas, minúsculas, números ou símbolos.
 3. Clique no botão "Gerar" para gerar a senha.
 4. Clique em "Copiar" para copiar a senha para a área de transferência.
-
-## Acesso ao Site
-
-Você pode acessar o Gerador de Senhas Aleatórias diretamente no seguinte link:
-
-**Gerador de Senhas Aleatórias** - [https://diogo-cedran.github.io/gerador-de-senhas/](https://diogo-cedran.github.io/gerador-de-senhas/)
 
 ## Tecnologias Utilizadas
 
