@@ -1,0 +1,225 @@
+/* Estilo geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #a0c9ff 0%, #417dc1 100%);
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.password-generator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.password-generator input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: monospace;
+}
+
+.generate-btn, .copy-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.copy-btn {
+    width: auto;
+    padding: 0 15px;
+    height: 48px;
+}
+
+.generate-btn i {
+    font-size: 20px;
+    color: white;
+}
+
+.generate-btn:hover, .copy-btn:hover {
+    background-color: #45a049;
+}
+
+.slider-container {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider-container label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Barra de rolagem */
+.slider-container input[type="range"] {
+    width: 100%;
+    max-width: 350px;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    background: linear-gradient(to right, #4caf50 50%, #e5e5e5 50%);
+    height: 8px;
+    border-radius: 5px;
+}
+
+.slider-container input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    border-radius: 5px;
+    position: relative;
+}
+
+.slider-container input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #4caf50;
+    border: 2px solid #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.slider-container input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #4caf50;
+    border: 2px solid #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider-container input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.options label {
+    margin: 5px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: #4caf50;
+}
+
+/* Notificação */
+.notification {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Copyright */
+.footer {
+    margin-top: auto;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .password-generator input[type="text"] {
+        font-size: 16px;
+    }
+
+    .generate-btn, .copy-btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* Notificação para mobile */
+    .notification {
+        right: 10px;
+        bottom: 10px;
+    }
+}
