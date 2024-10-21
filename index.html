@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Aleatórias</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de senhas aleatórias</h1>
+        <p>Gere senhas seguras e aleatórias com apenas um clique.</p>
+
+        <div class="password-generator">
+            <input type="text" id="password" readonly>
+            <button id="generate" class="generate-btn">
+                <i class="fas fa-sync-alt"></i>
+            </button>
+            <button id="copy" class="copy-btn">Copiar</button>
+        </div>
+
+        <div class="slider-container">
+            <label for="password-length">Quantidade de caracteres: <span id="length-value">12</span></label>
+            <input type="range" id="password-length" min="4" max="20" value="12">
+        </div>
+
+        <div class="options">
+            <label><input type="checkbox" id="include-upper" checked>A-Z</label>
+            <label><input type="checkbox" id="include-lower" checked>a-z</label>
+            <label><input type="checkbox" id="include-numbers" checked>0-9</label>
+            <label><input type="checkbox" id="include-symbols" checked>!@#$%^&*</label>
+        </div>
+
+        <div id="notification" class="notification">Senha copiada com sucesso!</div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2024 Diogo Cedran. Todos os direitos reservados.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
